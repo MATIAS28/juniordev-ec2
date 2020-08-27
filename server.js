@@ -25,14 +25,15 @@ res.sendFile(path.join(__dirname+'/dist/juniordev/index.html'));
 //DB conection
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI, { connectWithNoPrimary: true, useNewUrlParser: true })
+mongoose.connect("mongodb+srv://Matmun:Mocorillo123@kobdb-ybabt.mongodb.net/KOBdb?retryWrites=true&w=majority", { connectWithNoPrimary: true, useNewUrlParser: true })
                 .then(() => {
                   console.log('Conectado a la base de datos');
                 })
                 .catch(err => console.log(err));
 
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+var port = 9000;
+app.listen(port);
 
 //exportar
 module.exports = app;
