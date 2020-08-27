@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" style="color: #6490a7; font-size: 25px;" [routerLink]="['/about']">JuniorDev</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a [routerLink]="['/about']" class="nav-link">About</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/articulos']">Articulos</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" (click)="scroll()">Contacto</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<img src="" alt="">
+
+<section>
+  <router-outlet></router-outlet>
+</section>
+
+<footer style="background-color: #0f2027;">
+  <div class="divs">Junior</div>
+<div class="divs">
+  <span style="color: #6490a7;">Developer</span>
+</div>
+
+<p>juniordevelopperr@gmail.com</p>
+</footer>
