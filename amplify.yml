@@ -10,7 +10,7 @@ backend:
         - npm update
     postBuild:
         commands:
-        npm start 
+        - npm start 
  
 
     
