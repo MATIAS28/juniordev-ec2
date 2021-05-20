@@ -4,13 +4,13 @@ backend:
   phases:
     preBuild:
       commands:
-         - npm install
+         - npm ci
     build:
       commands:
-        - npm update
+        - npm install pm2 -g
     postBuild:
         commands:
-        - npm start 
+        - pm2 start server.js
  
 
     
