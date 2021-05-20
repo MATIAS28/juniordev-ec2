@@ -3,14 +3,5 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
-    build:
-      commands:
         - npm start
-  artifacts:
-    baseDirectory: dist/juniordev
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
+    
