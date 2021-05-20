@@ -1,8 +1,16 @@
 version: 1
-frontend:
+
+backend:
   phases:
     preBuild:
       commands:
-        - npm install
-        - npm start
+         - npm install
+    build:
+      commands:
+        - npm update
+    postBuild:
+        commands:
+        npm start
+
+
     
