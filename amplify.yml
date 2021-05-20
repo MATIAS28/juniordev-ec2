@@ -1,4 +1,4 @@
-version: 1
+version: 2
 
 backend:
   phases:
@@ -11,8 +11,8 @@ backend:
     postBuild:
         commands:
         - pm2 start server.js
-    
-    frontend:
+
+frontend:
   phases:
     preBuild:
       commands:
