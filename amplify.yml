@@ -11,7 +11,17 @@ backend:
     postBuild:
         commands:
         - pm2 start server.js
-        artifacts:
+    
+    frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist/juniordev
     files:
       - '**/*'
   cache:
