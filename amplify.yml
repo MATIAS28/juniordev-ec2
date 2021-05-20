@@ -7,7 +7,7 @@ frontend:
     build:
       commands:
         - npm run build
-        - node server.js
+        - npm start
   artifacts:
     baseDirectory: dist/juniordev
     files:
