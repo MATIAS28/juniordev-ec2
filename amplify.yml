@@ -11,6 +11,11 @@ backend:
     postBuild:
         commands:
         - pm2 start server.js
+        artifacts:
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
  
-
     
