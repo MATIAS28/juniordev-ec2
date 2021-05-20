@@ -8,7 +8,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist/juniordev
+    baseDirectory: ./server.js
     files:
       - '**/*'
   cache:
